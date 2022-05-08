@@ -1,21 +1,25 @@
 import { useTranslation } from 'next-i18next'
 import styles from './PageWrapper.module.sass'
+import Marquee from 'react-double-marquee'
 
 const PageWrapper = ({
     children
 }) => {
     const { t } = useTranslation('common')
+    const optionsMarquee = {
+        "direction": "left",
+        "speed": 0.04,
+        "delay": 3000,
+        "childMargin": 15,
+        "scrollWhen": "always"
+    }
 
     return (
         <div className={styles.page}>
             <div className={styles.ukraine}>
-                <p>{t('ukraineLong')}</p>
-                <p>{t('ukraineLong')}</p>
-                <p>{t('ukraineLong')}</p>
-                <p>{t('ukraineLong')}</p>
-                <p>{t('ukraineLong')}</p>
-                <p>{t('ukraineLong')}</p>
-                <p>{t('ukraineLong')}</p>
+                <Marquee direction='left' childMargin={3}>
+                    <p>{t('ukraineLong')} {t('ukraineLong')} {t('ukraineLong')} {t('ukraineLong')} {t('ukraineLong')} {t('ukraineLong')}</p>
+                </Marquee>
             </div>
             <div className={styles.header}>
 
