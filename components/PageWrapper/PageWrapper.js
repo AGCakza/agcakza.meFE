@@ -18,7 +18,7 @@ const PageWrapper = ({
         <div className={styles.page}>
             <div className={styles.ukraine}>
                 <Marquee direction='left' childMargin={3}>
-                    <p>{t('ukraineLong')} {t('ukraineLong')} {t('ukraineLong')} {t('ukraineLong')} {t('ukraineLong')} {t('ukraineLong')}</p>
+                    <p>{t('ukraineLong')} {t('ukraineLong')}</p>
                 </Marquee>
             </div>
             <div className={styles.header}>
