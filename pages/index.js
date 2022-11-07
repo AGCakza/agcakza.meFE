@@ -12,6 +12,7 @@ const Home = () => {
     <PageWrapper>
       <Head>
         <title>Avtandil Katsadze</title>
+        <link rel="shortcut icon" href="/favicon.ico" />
       </Head>
       <div className={styles.container}>
         <Avatar />

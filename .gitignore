@@ -2,3 +2,6 @@ node_modules
 .next
 .netlify
 _next
+package-lock.json
+yarn.lock
+node_modules.nosync
