@@ -5,3 +5,4 @@ _next
 package-lock.json
 yarn.lock
 node_modules.nosync
+.DS_Store
